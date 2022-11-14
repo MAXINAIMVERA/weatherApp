@@ -3,21 +3,30 @@
 }
 .container-card{
     text-align: center;
-    background-color: #73abec;
-    color: black;
+    background-color: black;
     border-radius: 1em;
-    width: 50em;
+    width: 50%;
+    height: 50%;
+    margin-top: 4em;
 }
 .container{
     background-color: rgb(56, 54, 54);
     display: flex;
-    padding: 17em;
+    padding: 1em;
     justify-content: center;
+    width: 97%;
+    height: 37.11em;
 }
+
+.searchbar{
+    padding-top: .5em;
+}
+
 .searchbar input{
     border: none;
     padding: 1em;
     border-radius: .5em;
+
 }
 
 .searchbar button{
@@ -35,49 +44,100 @@
    transition: .4s;
 }
 
+#error{
+    color: white;
+    margin-right: 7em;
+}
+
 .top{
     position: relative;
     text-align: center;
     color: white;
-    margin-top: 10%;
+    margin-top: 1%;
+    margin-bottom: -1%;
+    padding: 0;
 }
 
 .top h1{
     position: absolute;
-    top: 10%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 2.3em;
+    color: black;
 }
 
 .top img{
-    width: 20em;
+    width: 100%;
+    height: 15em;
 }
 
 .container-bottom{
-    margin-top: 10%;
+    
     display: flex;
     justify-content: space-evenly;
     background-color: aliceblue;
+    width: 100%;
 }
 
 .bottom{
     border-right: 1px solid black;
-    padding-right: 5em;
-    padding-left: 5em;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .bottom h2{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-size: 1.8em;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: 1.3em;
     
 }
 
 .bottom p{
-    margin-bottom: 1em;
-    font-size: 1.6em;
+    margin-bottom: 5%;
+    font-size: 1.2em;
 }
 
-#bottom-last{
-    border: none;
+.bottom-last{
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+
+img.icon {
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-bottom{
+    width: 3em;
+    height: 3em;
+}
+
+.bottom-weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-bottom-2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 0 0 1em 1em ; 
+}
+
+.last{
+    border-bottom: none;
+}
+
+.visible {
+    visibility: hidden;
 }
